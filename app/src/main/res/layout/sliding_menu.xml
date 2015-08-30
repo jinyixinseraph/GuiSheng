@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+android:id="@+id/sliding_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text = "click me"/>-->
+
+<!--1.主要内容的视图(FrameLayout)必须是DrawLayout的第一个子元素, 因为导航抽屉是在主要内容视图的上面.-->
+<!--2.主要内容视图设置为匹配父视图的宽度和高度, 因为它代表了整个界面导航抽屉是隐藏的. -->
+
+<!-- 抽屉视图(ListView)必须指定其水平重力与android:layout_gravity属性。将RelativeLayout设置为右边栏，
+抽屉视图指定其宽度用dp单位和高度匹配父视图。抽屉里的宽度不能超过320 dp, 所以用户总是可以看到主要内容视图的一部分。-->
+<!-- 支持从右到左(RTL)语言,指定值与 "start" 代替 "left",这里将ListView设置为左边栏菜单，所以android:layout_gravity属性设置为“start”，设置android:layout_gravity属性为“end”.-->
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:background="#ffffff"/>
+</com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>
+</LinearLayout>
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<android.support.v4.widget.DrawerLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/drawer_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" >-->
+
+
+    <!--</android.support.v4.widget.DrawerLayout>-->

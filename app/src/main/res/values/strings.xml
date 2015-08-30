@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">华大桂声（≧∇≦）</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="news">新闻</string>
+    <string name="originate">原创</string>
+    <string name="interaction">互动</string>
+    <string name="drawer_open">123（≧∇≦）</string>
+    <string name="drawer_close">321（≧∇≦）</string>
+
+    <string-array name="menu_array">
+        <item>头像修改</item>
+        <item>Menu 2</item>
+        <item>Menu 3</item>
+        <item>Menu 4</item>
+    </string-array>
+    <string name="title_activity_news_fragment">NewsFragment</string>
+    <string name="title_activity_originate_fragment">OriginateFragment</string>
+    <string name="title_activity_interaction_fragment">InteractionFragment</string>
+
+</resources>

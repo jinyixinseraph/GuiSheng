@@ -1,0 +1,82 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_activity"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigate">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#EEEEEE"
+                >
+                <Button
+                    android:id="@+id/news"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:background="#EEEEEE"/>
+                <Button
+                    android:id="@+id/original"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/originate"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:background="#EEEEEE"/>
+                <Button
+                    android:id="@+id/interact"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interaction"
+                    android:textColor="#666666"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:background="#EEEEEE"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tab">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="2dp"
+                    android:id="@+id/tab_line"
+                    android:background="#c73e3a"
+                    android:scaleType="matrix" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/navigate">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
+
+
+
